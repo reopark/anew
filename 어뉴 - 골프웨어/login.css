@@ -1,0 +1,235 @@
+header {
+    color: #000;
+    border-bottom: 1px solid #c7c7c7;
+}
+
+header .left .logo .white {
+    opacity: 0;
+}
+
+header .left .logo .black {
+    opacity: 1;
+}
+
+header .left .ham .bar {
+    background-color: #000;
+}
+
+header .right .search {
+    border: 1px solid rgba(0,0,0,0.4);
+}
+
+header .right .search input::placeholder {
+    color: rgba(0,0,0,0.4);
+}
+
+header .left .menu .menu_list:hover {
+    border-bottom: 1px solid #000;
+    top: 1px;
+}
+
+
+/*login*/
+.login {
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+}
+
+.login .login_title {
+    padding: 80px 0 60px 0;
+}
+
+.login .login_box {
+    width: 400px;
+}
+
+.login .login_sns, .login .login_naver {
+    width: 100%;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.login .login_sns {
+    background-color: #ff0;
+}
+
+.login .login_sns a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.login .login_naver {
+    background-color: #02c659;
+    color: #fff;
+}
+
+.login .login_naver a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+}
+
+.login .login_or {
+    margin: 30px 0;
+    border-bottom: 1px solid #666666;
+}
+
+.login .login_or .or {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 0 10px;
+    color: #a6a6a6;
+}
+
+.login .form_box .form {
+    margin-bottom: 20px;
+}
+
+.login .form_box .form input {
+    height: 56px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #c4c4c4;
+    background-color: #fff;
+    outline: none;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.login .form_box .form input::placeholder {
+    color: #c4c4c4;
+}
+
+.login .form_box .find_info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.login .form_box .find_info input {
+    display: none;
+}
+
+.login .form_box .find_info .auto {
+    display: flex;
+    align-items: center;
+}
+
+.login .form_box .find_info .auto .icon {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #666666;
+    background-color: #fff;
+}
+
+.login .form_box .find_info .auto .icon::before {
+    content: '';
+    display: block;
+    position: absolute;
+    box-sizing: border-box;
+    width: 5px;
+    height: 10px;
+    transform: translateX(110%) translateY(20%) rotateZ(40deg);
+    border-right: 2px solid #dddddd;
+    border-bottom: 2px solid #dddddd;
+}
+
+.login .form_box .find_info .auto label {
+    padding-left: 22px;
+}
+
+.login .form_box .find_info [type = 'checkbox']:checked + .auto .icon {
+    border-color: #fff;
+    background-color: #000;
+}
+
+.login .form_box .find_info [type = 'checkbox']:checked + .auto .icon::before {
+    border-color: #fff;
+}
+
+.login .form_box .form_btn {
+    width: 100%;
+    height: 56px;
+    background-color: #000;
+    color: #fff;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border: none;
+}
+
+.login .form_box .other_title {
+    text-align: center;
+    width: 100%;
+    padding: 30px 0 10px 0;
+    color: #a6a6a6;
+}
+
+.login .form_box .other_info {
+    border: 1px solid #666666;
+    height: 46px;
+}
+
+.login .form_box .other_info a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* sub_title */
+
+.login .login_box .sub_title {
+    margin: 80px 0 10px 0;
+    text-align: center;
+}
+
+.login .login_box .sub_title h2 {
+    font-size: 32px;
+}
+
+.login .login_box .sub_form_box .sub_form {
+    margin-bottom: 20px;
+}
+
+.login .login_box .sub_form_box .sub_form input {
+    height: 56px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #c4c4c4;
+    background-color: #fff;
+    outline: none;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.login .login_box .sub_form_box .sub_form input::placeholder {
+    color: #c4c4c4;
+}
+
+.login .login_box .sub_form_box .sub_btn {
+    width: 100%;
+    height: 56px;
+    background-color: #000;
+    color: #fff;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border: none;
+}
