@@ -1,0 +1,224 @@
+/* header */
+header {
+    color: #000;
+    border-bottom: 1px solid #c7c7c7;
+}
+
+header .left .logo .black {
+    opacity: 1;
+}
+
+header .right .search {
+    border: 1px solid rgba(0,0,0,0.4);
+}
+
+header .right .search input {
+    color: #000;
+}
+
+header .right .search input::placeholder {
+    color: rgba(0,0,0,0.4);
+}
+
+header .left .ham .bar {
+    background-color: #000;
+}
+
+header .left .menu .menu_list:hover {
+    border-bottom: 1px solid #000;
+    top: 1px;
+}
+
+/* section1 */
+.section1 {
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+
+.section1 .s1_title .title {
+    width: 90%;
+    max-width: 1700px;
+    margin: 0 auto;
+}
+
+.section1 .s1_title h3 {
+    font-size: 28px;
+}
+
+.section1 .s1_title .s1_menu {
+    margin-top: 20px;
+    border-bottom: 1px solid #c7c7c7;
+}
+
+.section1 .s1_title .s1_menu ul {
+    display: flex;
+    width: 90%;
+    max-width: 1700px;
+    margin: 0 auto;
+}
+
+.section1 .s1_title .s1_menu ul li {
+    font-size: 16px;
+    padding: 24px 0;
+    color: #888888;
+}
+
+.section1 .s1_title .s1_menu ul li.on {
+    font-weight: 700;
+    color: #000;
+    border-bottom: 2px solid #000;
+}
+
+.section1 .s1_title .s1_menu ul li:not(:first-child) {
+    margin-left: 20px;
+}
+
+.section1 .filter {
+    width: 90%;
+    max-width: 1700px;
+    margin: 0 auto;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section1 .filter .count {
+    font-size: 13px;
+    color: #888888;
+}
+
+.section1 .filter .count .count_list {
+    font-weight: 800;
+    color: #000;
+}
+
+.section1 .filter .sort select {
+    width: 100%;
+    height: 40px;
+    padding: 0 30px 0 10px;
+    font-size: 13px;
+    color: #666666;
+    border: 1px solid #e0e0e0;
+    box-sizing: border-box;
+    outline: none;
+    appearance: none;
+    background: #fff url(img/down.png) no-repeat right 8px center;
+    background-size: 14px auto;
+}
+
+.section1 .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.section1 .container .item {
+    width: 100%;
+    margin-bottom: 50px;
+    border: 1px solid #dddddd;
+}
+
+.section1 .container .item .img_box {
+    width: 100%;
+    overflow: hidden;
+}
+
+.section1 .container .item .h {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: opacity 0.55s;
+}
+
+.section1 .container .item .img_box img:not(.h) {
+    transition: opacity 0.55s;
+}
+.section1 .container .item .text_box {
+    margin: 15px 40px 0;
+}
+
+.section1 .container .item .text_box h5 {
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #444444;
+    font-size: 15px;
+}
+
+.section1 .container .item .text_box .b {
+    font-weight: 800;
+    margin-bottom: 8px;
+    color: #000;
+}
+
+.section1 .container .item .text_box p {
+    margin-top: 14px;
+    color: #888888;
+    margin-bottom: 14px;
+}
+
+.section1 .container .item:hover .img_box img.h {
+    opacity: 1;
+}
+
+.section1 .container .item:hover .img_box img:not(.h) {
+    opacity: 0;
+}
+
+.section1 .container .item:hover .icon {
+    opacity: 1;
+}
+
+.section1 .container .icon {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: #fff;
+    opacity: 0;
+}
+
+.section1 .container .icon i {
+    position: absolute;
+    transition: opacity 0.25s;
+    font-size: 14px;
+}
+
+.section1 .container .icon .fa-solid {
+    opacity: 0;
+    color: #f00;
+}
+
+.section1 .container .icon:hover .fa-solid {
+    opacity: 1;
+}
+
+.section1 .container .icon:hover .fa-regular {
+    opacity: 0;
+}
+
+.section1 .more {
+    text-align: center;
+}
+
+.section1 .more a {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 20px 0;
+    width: 150px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50px;
+    font-weight: 700;
+}
+
+.section1 .more a i {
+    margin-left: 10px;
+    font-size: 10px;
+}
